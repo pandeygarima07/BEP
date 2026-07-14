@@ -2,7 +2,8 @@ name: Import from cPanel via FTP
 
 on:
   workflow_dispatch:
-
+permissions:
+  contents: write
 jobs:
   ftp-import:
     runs-on: ubuntu-latest
